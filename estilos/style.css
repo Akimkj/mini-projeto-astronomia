@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+html, body {
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+.image {
+    background-color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*padding-top: 25em;
+    padding-bottom: 25em;*/
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+
+#img01 {
+    background-image: url(../imagens/terra.jpg);
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url(../imagens/pexels-pixabay-2150.jpg);
+    background-position: center center;
+}
+
+#img03 {
+    background-image: url(../imagens/foto-nasa-satelite.jpg);
+    background-position: right top;
+}
+
+#img04 {
+    background-image: url(../imagens/planets.jpg);
+    background-position: center center;
+}
+
+.texto {
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+    background-color: rgb(105, 105, 105);
+    
+}
