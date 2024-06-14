@@ -1,5 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+    font-family: 'Vogue';
+    src: url(../fontes/Vogue.ttf) format(truetype);
+}
+
+:root {
+    --fonteTituloPrincipal: 'Vogue', serif;
+    --fonteTitulosSecundarios: "Oswald", sans-serif;
+    --fontesGenericas: verdana, arial, sans-serif;
+    --fonteDeTexto: "Crimson Pro", serif;
+}
 
 * {
     margin: 0px;
@@ -10,6 +24,23 @@ html, body {
     min-height: 100vh;
     background-color: blueviolet;
 }
+#tituloPrincipal {
+    display: inline-block;
+    font-size: 3em;
+    font-family: var(--fonteTituloPrincipal);
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    color: white;
+    padding: 15px;
+    background-color: rgba(131, 130, 130, 0.726);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
 .image {
     background-color: white;
     padding-top: 4vh;
@@ -17,10 +48,10 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*padding-top: 25em;
-    padding-bottom: 25em;*/
     padding-top: 50vh;
     padding-bottom: 50vh;
+    position: relative;
+    box-shadow: inset 3px 2px 6px 0px rgba(0, 0, 0, 0.719);
 }
 
 #img01 {
@@ -44,8 +75,47 @@ html, body {
 }
 
 .texto {
-    padding-top: 40vh;
-    padding-bottom: 40vh;
+    color: white;
+    padding-top: 10vh;
+    padding-bottom: 9em;
     background-color: rgb(105, 105, 105);
-    
+}
+
+.texto h2 {
+    font-family: var(--fonteTitulosSecundarios);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+    font-size: 3em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.texto p {
+    font-family: var(--fonteDeTexto);
+    line-height: 1.5em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    text-align: justify;
+}
+
+#referencias {
+    color: white;
+    background-color: aliceblue;
+    padding-bottom: 10em;
+    background-color: rgb(105, 105, 105);
+}
+
+#referencias h2 {
+    font-family: var(--fonteTitulosSecundarios);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+    padding-bottom: 0.5em;
+    padding-left: 1.2em;
+}
+
+#referencias p {
+    padding-top: 0.5em;
+    font-family: var(--fonteDeTexto);
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    text-align: justify;
 }
