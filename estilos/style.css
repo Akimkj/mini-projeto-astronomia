@@ -9,6 +9,7 @@
 }
 
 :root {
+    --gradienteInstagram: linear-gradient(to bottom, #7D0BFE, #FC02D8, #FE0096, #F81F27, #FE6404, #FE8D01, #FDC300);
     --fonteTituloPrincipal: 'Vogue', serif;
     --fonteTitulosSecundarios: "Oswald", sans-serif;
     --fontesGenericas: verdana, arial, sans-serif;
@@ -94,10 +95,10 @@ html, body {
 }
 
 .texto p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
     text-align: justify;
     text-indent: 2em;
     padding-bottom: 1.5em;
@@ -140,7 +141,7 @@ main a:hover {
     font-family: var(--fonteTitulosSecundarios);
     font-size: 2em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
-    padding-bottom: 0.5em;
+    padding-bottom: 0.2em;
     padding-left: 1.2em;
 }
 
@@ -159,8 +160,7 @@ footer {
 
 div {
     display: inline-block;
-    min-width: 320px;
-    max-width: 950px;
+    max-width: 55vw;
 }
 
 footer h2 {
@@ -177,5 +177,6 @@ footer p {
 
 nav {
     display: inline-block;
-    margin-left: 40vw;
+    padding-left: 25vw;
+    max-height: 50vw;
 }
