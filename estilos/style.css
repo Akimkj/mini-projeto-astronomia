@@ -159,7 +159,8 @@ footer {
 
 div {
     display: inline-block;
-    width: 60vw;
+    min-width: 320px;
+    max-width: 950px;
 }
 
 footer h2 {
