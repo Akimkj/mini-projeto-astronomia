@@ -22,7 +22,6 @@
     
 }
 html, body {
-    min-width: 100vw;
     min-height: 100vh;
     background-color: black;
     font-size: 1em;
