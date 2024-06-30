@@ -14,12 +14,12 @@
     --fonteTitulosSecundarios: "Oswald", sans-serif;
     --fontesGenericas: verdana, arial, sans-serif;
     --fonteDeTexto: "Crimson Pro", serif;
+    --fonteMono: 'Courier New', Courier, monospace;
 }
 
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px; 
 }
 html, body {
     min-height: 100vh;
@@ -169,7 +169,7 @@ footer h2 {
     padding-bottom: 10px;
 }
 
-footer p {
+footer > div > p {
     padding-left: 3em;
     padding-bottom: 2em;
     text-align: justify;
@@ -179,4 +179,10 @@ nav {
     display: inline-block;
     padding-left: 25vw;
     max-height: 50vw;
+}
+
+footer > aside > p {
+    font-family: var(--fonteMono);
+    text-align: center;
+    padding-bottom: 5px;
 }
